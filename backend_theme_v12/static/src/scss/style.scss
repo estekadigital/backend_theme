@@ -247,6 +247,11 @@ textarea, select, .o_form_view.o_form_editable .o_form_field_many2manytags,
     outline: none;
     border-bottom: 2px solid $brand-primary;
 }
+.o_web_client.o_no_thread_window.o_tooltip_parent
+{
+	background: url(/backend_theme_v12/static/src/img/bg-overlay.svg), linear-gradient(to right bottom, #77717e, #c9a8a9);
+	background-size: cover;
+}
 
 .o_input {
     border: 1px solid #ccc;
@@ -264,7 +269,8 @@ textarea, select, .o_form_view.o_form_editable .o_form_field_many2manytags,
 
 .o_required_modifier {
     &.o_input, .o_input {
-        background-color: lighten($brand-primary, 35%) ! important;
+        //background-color: lighten($brand-primary, 35%) ! important;
+	background-color: initial !important;
     }
 }
 
